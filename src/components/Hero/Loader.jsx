@@ -4,7 +4,6 @@ import { Flip } from "gsap/Flip";
 import { useEffect, useRef } from "react";
 import "./loader.css"
 gsap.registerPlugin(Flip, SplitText);
-gsap.config({ trialWarn: false });
 
 const Loader = () => {
   const heroRef = useRef(null);
