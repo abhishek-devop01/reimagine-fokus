@@ -196,7 +196,7 @@ const Loader = () => {
     if (heroBgRef.current) {
       tl.to(heroBgRef.current, {
         scaleY: "100%",
-        duration: 1.5,
+        duration: 2.9,
         ease: "power2.inOut",
         delay: 0.25,
       });
