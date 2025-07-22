@@ -76,7 +76,7 @@ section p {
   opacity: 0;
 }
 
-.innerText a button {
+.innerText a #button {
   background-color: transparent;
   border: 1px solid #000000;
   border-radius: 50px;
@@ -84,7 +84,7 @@ section p {
   transition: 0.5s;
 }
 
-.innerText a button:hover {
+.innerText a #button:hover {
   background-color: yellowgreen;
 }
 
@@ -148,7 +148,7 @@ section p {
     width: 70%;
     font-size: 5vw;
   }
-  .innerText a button {
+  .innerText a #button {
     padding: 2.5vw 5vw;
   }
 }

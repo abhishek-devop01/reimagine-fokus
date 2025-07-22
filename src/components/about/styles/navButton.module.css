@@ -1,0 +1,36 @@
+.wrapper {
+  height: 60px;
+  aspect-ratio: 1/1;
+  border: 1px solid rgba(253, 253, 253, 0.4);
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  transition: background 0.4s linear;
+}
+.wrapper .icons_container {
+  transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.wrapper .icons_container span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.wrapper:hover {
+  background: var(--myGreen);
+  border: unset;
+}
+.wrapper:hover svg path {
+  stroke: var(--myBlack);
+}
+.wrapper[data-left=false]:hover .icons_container {
+  transform: translate(149%);
+}
+.wrapper[data-left=false] .icons_container span {
+  left: -125%;
+}
+.wrapper[data-left=true] .icons_container span {
+  left: 125%;
+}
+.wrapper[data-left=true]:hover .icons_container {
+  transform: translate(-100%);
+}/*# sourceMappingURL=navButton.module.css.map */

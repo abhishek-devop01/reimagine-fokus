@@ -12,8 +12,9 @@ const locomotiveScroll = new LocomotiveScroll();
       <Loader />
       <Marquee />
       <Text />
-      <Indi />
       <About />
+      <Indi />
+
     </div>
   )
 }

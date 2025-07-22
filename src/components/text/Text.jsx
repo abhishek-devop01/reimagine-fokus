@@ -89,7 +89,7 @@ const Text = () => {
             Fokus is not just what you drink — it’s what drives you.
 Built for creators, dreamers, and doers — welcome to your daily dose of clarity, community, and creative energy.
           </h2>
-          <a href="#"><button>More About Us</button></a>
+          <a href="#"><button id='button'>More About Us</button></a>
         </div>
         <div className="img-div d-flex">
           <div className="lft d-flex-c">

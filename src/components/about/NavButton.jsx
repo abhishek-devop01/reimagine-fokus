@@ -3,7 +3,7 @@ import styles from "./styles/navButton.module.scss"
 
 const NavButton = ({ left = false}) => {
   return (
-    <button
+    <button id="btn"
       data-left={left} 
       className={styles.wrapper}>
       <div className={styles.icons_container}>

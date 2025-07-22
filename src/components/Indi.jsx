@@ -20,19 +20,19 @@ const Projects = () => {
 
   return (
     <section 
-      className="w-full px-desktop">
+      className="w-full px-desktop absolute top-15 text-left">
       {/* LABELS */}
       <div className="flex items-center justify-between mb-[10px] opacity-40">
-        <span className="w-[20%]">Project</span>
-        <div className="w-[46%] flex justify-between">
-          <span>Service</span>
-          <span>Duration</span>
+        <span className="w-[20%]"></span>
+        <div className="w-[46%] flex justify-between items-center ">
+          <span className="text-red-700 font-bold">Fokus</span>
+          <span>Generic Energy Drink</span>
         </div>
-        <span className="w-[20%] text-right" >Year</span>
+        <span className="w-[20%] text-right" >Generic Sports Drink</span>
       </div>
 
       {/* PROJECTS */}
-      <div
+      <div className="text-left "
         onMouseEnter={() => setModal(prev => { return {...prev, displayModal: true} })}
         onMouseLeave={() => setModal(prev => { return {...prev, displayModal: false} })} 
       >

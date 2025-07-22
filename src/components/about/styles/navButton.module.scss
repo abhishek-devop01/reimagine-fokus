@@ -1,9 +1,11 @@
+
 .wrapper {
   height: 60px;
   aspect-ratio: 1/1;
   border: 1px solid rgba($color: #FDFDFD, $alpha: .4);
   border-radius: 40px;
   overflow: hidden;
+
   position: relative;
   transition: background 0.4s linear;
 
@@ -29,16 +31,16 @@
 
   &[data-left="false"]:hover {
     .icons_container {
-      transform: translate(100%);
+      transform: translate(149%);
     }
   }
 
   &[data-left="false"] .icons_container span {
-    left: -100%;
+    left: -125%;
   }
 
   &[data-left="true"] .icons_container span {
-    left: 100%;
+    left: 125%;
   }
 
   &[data-left="true"]:hover {
