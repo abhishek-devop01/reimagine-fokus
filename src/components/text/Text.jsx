@@ -86,7 +86,8 @@ const Text = () => {
       <section className="d-flex section2 ">
         <div className="innerText d-flex-c">
           <h2>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet ipsa tempore totam voluptatum et aliquam animi, enim pariatur maxime modi.
+            Fokus is not just what you drink — it’s what drives you.
+Built for creators, dreamers, and doers — welcome to your daily dose of clarity, community, and creative energy.
           </h2>
           <a href="#"><button>More About Us</button></a>
         </div>

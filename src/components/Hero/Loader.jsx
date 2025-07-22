@@ -390,27 +390,27 @@ const Loader = () => {
       </div>
       <div className="header">
         <h1 className="h1">
-          <span className="name font-black">Fokus</span>
+          <span className="name ">Fokus</span>
         </h1>
       </div>
       <div className="site-info">
         <h2 className="h2">
-          <span>Stay Active, </span>
+          <span>Stay Active </span>
           
         </h2>
         <div className="divider" ref={siteInfoDividerRef}></div> {/* Add ref */}
         <div className="site-info-copy">
           <p className="p">
-            <span>Stay Active, Stay Hydrated</span>
+            <span>Built for the bold. </span>
           </p>
           <p className="p">
-            <span>Operating since 2019</span>
+            <span>Operating since 2k25</span>
           </p>
         </div>
       </div>
       <div className="hero-footer">
         <h2>
-          <span>Watch showreel</span>
+          <span>Scroll Down</span>
         </h2>
       </div>
     </section>

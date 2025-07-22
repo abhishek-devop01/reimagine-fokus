@@ -1,32 +1,32 @@
 const testimonials = [
   {
-    name: 'Ava Thompson',
-    title: 'Product Designer at BloomTech',
+    name: 'Ashish Chanchlani',
+    title: 'YouTuber And Co-founder of OG BEAUTY ',
     review: 'Working with Meshach was an absolute delight. His attention to detail and creative problem-solving elevated our UI to the next level.',
     image: '/src/assets/images/ava-th.jpg'
   },
   {
-    name: 'Liam Osei',
+    name: 'Tanmay "Scout"',
     title: 'CTO at Nimbus AI',
-    review: 'Meshach’s frontend skills are top-tier. He brought both speed and beauty to our dashboard UI, and it made our investors smile.',
+    review: '“Being among the first to try Fokus, I knew from the first sip—this wasn’t just a drink; it was an experience! Now, I proudly say I’m its biggest fan.”',
     image: '/src/assets/images/liam.jpg'
   },
   {
-    name: 'Sofia Alvarez',
+    name: 'Purav Jha',
     title: 'Marketing Manager at JetBloom',
-    review: 'Not only did he deliver ahead of schedule, but he also improved our user retention through a smart redesign. Highly recommend!',
+    review: '“Is 400ml ki bottle mein itni cheezein hai! Gym se lekar shoot tak, har jagah Fokus mera saath dega to keep me going all day long.”',
     image: '/src/assets/images/sofia.jpg'
   },
   {
-    name: 'David Kim',
+    name: 'Aditya Rikhari',
     title: 'Engineering Manager at HyperLayer',
-    review: 'From Figma to functional components, Meshach translated designs with incredible precision. He’s the dev you want on your team.',
+    review: '“Fokus—naam hi nahi, ek vibe hai! The branding, the taste, the whole energy of it is so addictive that it’s effortlessly becoming my daily companion.”',
     image: '/src/assets/images/david.jpg'
   },
   {
     name: 'Chioma Okeke',
     title: 'Head of Digital at NovaBank',
-    review: 'Meshach built a modern, performant, and accessible interface for our banking app. Our users love the update.',
+    review: '“Just like my songs, log Fokus ke fan hone wale hain! I absolutely love the strawberry watermelon flavour—it’s the perfect blend of taste!”',
     image: '/src/assets/images/chioma.jpg'
   },
   {
@@ -41,24 +41,7 @@ const testimonials = [
     review: 'His understanding of component design and accessibility is unmatched. We saw a 40% performance boost post-refactor.',
     image: '/src/assets/images/tariq.jpg'
   }, 
-  {
-    name: 'Amara Nwosu',
-    title: 'UX Lead at Reboot Studio',
-    review: 'Meshach is the bridge between designers and developers. He thinks like both and that’s rare.',
-    image: '/src/assets/images/amara.jpg'
-  },
-  {
-    name: 'Jonas Müller',
-    title: 'Founder at GreenByte',
-    review: 'We hired Meshach for a short contract, but he ended up leading the entire frontend effort. Simply brilliant.',
-    image: '/src/assets/images/jonas.jpg'
-  },
-  {
-    name: 'Sebastian Lee',
-    title: 'Tech Lead at KlarBase',
-    review: 'Meshach has this rare ability to take initiative and push features with pixel perfection. He’s one of the best we’ve worked with.',
-    image: '/src/assets/images/sabastian.jpg'
-  }
+ 
 ];
 
 export {testimonials};

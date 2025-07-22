@@ -3,6 +3,7 @@ import Marquee from './components/marquee/Marquee'
 import LocomotiveScroll from 'locomotive-scroll';
 import Text from './components/text/Text';
 import About from './components/about/About';
+import Indi from './components/Indi';
 const App = () => {
 const locomotiveScroll = new LocomotiveScroll();
 
@@ -11,6 +12,7 @@ const locomotiveScroll = new LocomotiveScroll();
       <Loader />
       <Marquee />
       <Text />
+      <Indi />
       <About />
     </div>
   )

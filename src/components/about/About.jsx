@@ -69,18 +69,18 @@ function About() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.section_desc}>
-        <span>Testimonials</span>
+        <span>WHAT YOUR FAVOURITES SAY</span>
 
         <div className={styles.filler_texts}>
           <div className={styles.section_year}>
             <span>@2022-2025</span>
             <div className={styles.dev_cred}>
-              <span>Designer & Developer</span>
-              <span>Meshach Nsude</span>
+              <span>Clarity in every sip.</span>
+              <span>“Sip. Create. Repeat.”</span>
             </div>
           </div>
 
-          <span>/01</span>
+          {/* <span>/01</span> */}
         </div>
 
       </div>

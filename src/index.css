@@ -7,6 +7,16 @@
   src: url("./assets/fonts/NeueMontreal-Regular.otf");
   font-weight: 300;
 }
+@theme {
+  --font-main: "Montreal", Helvetica, sans-serif;
+
+  --color-myBlack: #141414;
+  --color-myWhite: #FDFDFD;
+  --color-myGreen: #5DEA7C;
+
+  --padding-desktop: 35px;
+  --ease-myEase2: cubic-bezier(0.40, 0, 0.24, 1);
+}
 
 :root {
   font-family: "Montreal", Arial, Helvetica, sans-serif;
@@ -28,7 +38,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "gilroy";
+  font-family: "gilroy", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background-color: #817a7ab6;
 }
 
