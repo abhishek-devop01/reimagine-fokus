@@ -1,7 +1,8 @@
 import Loader from './components/Hero/Loader'
-import Marquee from './components/Marquee'
+import Marquee from './components/marquee/Marquee'
 import LocomotiveScroll from 'locomotive-scroll';
 import Text from './components/text/Text';
+import About from './components/about/About';
 const App = () => {
 const locomotiveScroll = new LocomotiveScroll();
 
@@ -10,6 +11,7 @@ const locomotiveScroll = new LocomotiveScroll();
       <Loader />
       <Marquee />
       <Text />
+      <About />
     </div>
   )
 }
