@@ -80,8 +80,8 @@ const Text = () => {
       data-scroll-speed="-.1"
     id="main" ref={mainRef}>
       <section className="d-flex-c section1 ">
-        <h1 className='heading'>Gallery</h1>
-        <p>products</p>
+        <h1 className='heading'>We’re more than just a brand</h1>
+        <p>#getFokus</p>
       </section>
       <section className="d-flex section2 ">
         <div className="innerText d-flex-c">

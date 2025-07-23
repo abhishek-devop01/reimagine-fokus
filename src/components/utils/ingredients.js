@@ -17,7 +17,7 @@ const projectList = [
   },
   {
     name: "Health Benefits",
-    services: "Vitamin D3 for bone health, LCLT for recovery and more",
+    services: "Vitamin D3 for bone health, and more",
     duration: "Quick energy boost",
     year: "nutritional benefits",
     preview: "/img2.jpg",

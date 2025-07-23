@@ -6,7 +6,9 @@ import ProjectListItem from "./gallery/ProjectListItem";
 function Indi() {
 
   return (
-    <div className="h-[100vh] w-full flex items-center">
+    <div 
+    
+    className="h-[100vh] w-full flex text-white items-center ">
       <Projects />
     </div>
   )

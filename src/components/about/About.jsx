@@ -67,7 +67,9 @@ function About() {
   }
 
   return (
-    <div className={styles.wrapper}>
+    <div 
+     data-scroll data-scroll-section  data-scroll-speed="0.8" 
+    className={styles.wrapper}>
       <div className={styles.section_desc}>
         <span>WHAT YOUR FAVOURITES SAY</span>
 
