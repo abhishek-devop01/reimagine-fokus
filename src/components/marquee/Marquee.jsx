@@ -1,29 +1,39 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 
-const Marquee = () => {
-  const textContent = "We Are Fokus We Are Fokus ";
-  const fullMarqueeContent = textContent + textContent; 
-
-  const { scrollYProgress } = useScroll();
-
-  const marqueeTravelDistance = -1500;
-  const xMovement = useTransform(scrollYProgress, [0, 1], ["0px", `${marqueeTravelDistance}px`]);
-
+const Marquee = ({ imagesUrl, direction }) => {
   return (
-    <div
-      data-scroll
-      data-scroll-section
-      data-scroll-speed=".01"
-      className="w-full z-[9] h-72 py-15 rounded-tl-3xl text-white rounded-tr-3xl bg-[#004D43] overflow-hidden"
-    >
-      <div className="h-full  border-zinc-400 overflow-hidden flex whitespace-nowrap items-center">
-        <motion.h3
-          style={{ x: xMovement }}
-          className="text-[13vw] tracking-tighter leading-none font-black uppercase pr-18 flex-shrink-0 h-full flex items-center justify-center"
-        >
-          {fullMarqueeContent}
-        </motion.h3>
-      </div>
+    <div className="flex items-center bg-black gap-20 h-54 overflow-hidden mt-10">
+      <motion.div
+        initial={{ x: direction === "left" ? "0" : "-100%" }}
+        animate={{ x: direction === "left" ? "-100%" : "0" }}
+        transition={{ ease: "linear", duration: 30, repeat: Infinity }}
+        className="flex flex-shrink-0 gap-20 items-center h-14 bg-"
+      >
+        {imagesUrl.map((url, index) => (
+          <img key={index} className="" src={url} alt="" />
+        ))}
+      </motion.div>
+      <motion.div
+        initial={{ x: direction === "left" ? "0" : "-100%" }}
+        animate={{ x: direction === "left" ? "-100%" : "0" }}
+        transition={{ ease: "linear", duration: 30, repeat: Infinity }}
+        className="flex flex-shrink-0 gap-20  items-center"
+      >
+        {imagesUrl.map((url, index) => (
+          <img key={index} className="" src={url} alt="" />
+        ))}
+      </motion.div>
+      <motion.div
+        initial={{ x: direction === "left" ? "0" : "-100%" }}
+        animate={{ x: direction === "left" ? "-100%" : "0" }}
+        transition={{ ease: "linear", duration: 30, repeat: Infinity }}
+        className="flex flex-shrink-0 gap-20  items-center"
+      >
+        {imagesUrl.map((url, index) => (
+          <img key={index} className="" src={url} alt="" />
+        ))}
+      </motion.div>
     </div>
   );
 };

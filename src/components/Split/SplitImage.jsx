@@ -11,7 +11,7 @@ import NavButton from "./NavButton";
 gsap.registerPlugin(SplitText, CustomEase);
 export const myEase = CustomEase.create("custom", "0.76, 0, 0.24, 1");
 
-function About() {
+function SplitImage() {
   const total = testimonials.length;
   const [activeIndex, setActiveIndex] = useState(0);
   const [allowNavigation, setAllowNavigation] = useState(true);
@@ -68,7 +68,6 @@ function About() {
 
   return (
     <div 
-     data-scroll data-scroll-section  data-scroll-speed="0.8" 
     className={styles.wrapper}>
       <div className={styles.section_desc}>
         <span>WHAT YOUR FAVOURITES SAY</span>
@@ -122,4 +121,4 @@ function About() {
   )
 }
 
-export default About
+export default SplitImage

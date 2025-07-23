@@ -5,40 +5,34 @@ import { motion } from "framer-motion";
 const Products = () => {
   let products = [
     {
-      title: "aquitel",
+      title: "Kiwi, Lemon",
       description:
         "lorem ipsum dolor sit amet con laoreet et justo eu just cause eu just cause",
       live: true,
       case: false,
     },
     {
-      title: "TTR",
+      title: "Pineapple",
       description:
         "lorem ipsum dolor sit amet con laoreet et justo eu just cause eu just cause",
       live: true,
       case: false,
     },
     {
-      title: "Yir2022",
+      title: "Starawberry",
       description:
         "lorem ipsum dolor sit amet con laoreet et justo eu just cause eu just cause",
       live: true,
       case: true,
     },
-    {
-      title: "yahoo!",
-      description:
-        "lorem ipsum dolor sit amet con laoreet et justo eu just cause eu just cause",
-      live: true,
-      case: true,
-    },
+    
   ];
   const [pos, setPos] = useState(0);
   const move = (val) => {
     setPos(val * 20);
   };
   return (
-    <div className="py-10 mx-5 mt-32 relative">
+    <div className="py-10 mx-5 h-full mt-32 relative">
       {products.map((val, index) => (
         <Product key={index} val={val} mover={move} count={index} />
       ))}

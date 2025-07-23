@@ -1,35 +1,36 @@
 import Loader from "./components/Hero/Loader";
-import Marquee from "./components/marquee/Marquee";
+import ScrollMarquee from "./components/marquee/ScrollMarquee";
 import LocomotiveScroll from "locomotive-scroll";
 import Text from "./components/text/Text";
-import About from "./components/about/About";
-import Indi from "./components/Indi";
-import Cards from "./components/Cards";
-import Footer from "./components/Footer";
-import Marquees from "./components/Marquees";
-import Navbar from "./components/Navbar";
-import Products from "./components/Products";
-import Stripes from "./components/Stripes";
-import WorkHero from "./components/WorkHero";
+import SplitImage from "./components/Split/SplitImage";
+import Table from "./components/table/Table";
+import Footer from "./components/footer/Footer";
+import Marquees from "./components/marquee/Marquees";
+import Products from "./components/product/Products";
+import { Routes, Route } from "react-router-dom"; // ✅ no 'Router' here
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+
 const App = () => {
-  const locomotiveScroll = new LocomotiveScroll();
+  const locomotiveScroll = new LocomotiveScroll(); // optional: move to useEffect if needed
 
   return (
     <div className="min-h-screen w-full">
-      <Loader />
-      <Marquee />
+      <Routes>
+        {/* Initial route */}
+        <Route path="/" element={<Loader />} />
+        <Route path="/home" element={<Loader />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+      {/* These will show on all pages which may not be what you want */}
+      <ScrollMarquee />
       <Text />
       <Products />
-
       <Marquees />
-
-      <About />
-      <Indi />
-      {/* <WorkHero /> */}
-
-      {/* <Navbar /> */}
-      {/* <Stripes /> */}
-      <Cards />
+      <SplitImage />
+      <Table />
       <Footer />
     </div>
   );

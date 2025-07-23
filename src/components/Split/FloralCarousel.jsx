@@ -2,7 +2,7 @@ import { useRef } from "react";
 import styles from "./styles/floral.module.scss"
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { myEase } from "./About";
+import { myEase } from "./SplitImage";
 
 const FloralCarousel = ({testimonials = [], activeIndex, isNext}) => {
   const total = testimonials.length;

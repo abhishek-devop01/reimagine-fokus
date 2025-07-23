@@ -1,7 +1,7 @@
 import { useState } from "react";
-import {projectList} from "./utils/ingredients";
-import PreviewModal from "./gallery/PreviewModal";
-import ProjectListItem from "./gallery/ProjectListItem";
+import {projectList} from "../utils/ingredients";
+import PreviewModal from "../gallery/PreviewModal";
+import ProjectListItem from "../gallery/ProjectListItem";
 
 function Indi() {
 

@@ -2,7 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full mt-20 text-white">
+    <footer 
+    
+    className="w-full mt-20 text-white">
       <div className="max-w-screen-xl mx-auto px-4 py-10 md:py-16">
         {/* Mobile: stack, Desktop: 2-col grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
