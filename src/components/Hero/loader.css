@@ -183,6 +183,7 @@ nav {
 }
 .name {
   margin-top: 20vh;
+  font-weight: 600;
 }
 .site-info {
   position: absolute;
