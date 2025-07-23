@@ -246,3 +246,82 @@ nav {
     left: 7.5rem;
   }
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+  /*  IE-Responsive  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* 1.  Kill custom-properties */
+:root {
+  --bg: #444443;
+  --fg: #1f1f1f;
+  --loader-bg: #2b2b29;
+  --stroke: rgba(0, 0, 0, 0.2);
+}
+
+/* 2.  Hero height (IE has no svh) */
+.hero {
+  height: 100vh;
+}
+.sidebar {
+  height: 100vh;
+}
+
+/* 3.  Fluid sizes without clamp() or vw for IE */
+.img,
+#fokusname {
+  width: 80px;                 /* IE static fallback */
+}
+@supports not (-ms-ime-align: auto) {        /* modern browsers */
+  .img,
+  #fokusname {
+    width: 6vw;
+  }
+}
+
+.fokuslogo {
+  height: 60px;                /* IE static fallback */
+}
+@supports not (-ms-ime-align: auto) {
+  .fokuslogo {
+    height: 3vw;
+  }
+}
+
+/* 4.  Aspect ratio for IE */
+.images-container .img,
+.sidebar .logo {
+  width: 20%;
+  height: 0;
+  padding-bottom: 12%;         /* 5/3 ratio */
+}
+@supports not (-ms-ime-align: auto) {
+  .images-container .img,
+  .sidebar .logo {
+    width: 20%;
+    height: auto;
+    padding-bottom: 0;
+    aspect-ratio: 5 / 3;
+  }
+}
+
+/* 5.  Break-points (same as the ones you already had) */
+@media screen\0 {               /* IE9–11 hack */
+  .h1 { font-size: 2.5rem; letter-spacing: -0.05rem; }
+  .h2 { font-size: 1.5rem; }
+
+  nav .links    { display: none; }
+
+  .images-container img { width: 30%; }
+
+  .header {
+    top: 25%;
+    width: calc(100% - 12.5rem);
+  }
+
+  .site-info {
+    width: calc(100% - 12.5rem);
+    right: auto;
+    left: 7.5rem;
+  }
+}
+ }

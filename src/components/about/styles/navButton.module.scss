@@ -1,51 +1,64 @@
-
+// 1. Make the whole thing scale with the viewport width (or clamp it)
 .wrapper {
-  height: 60px;
-  aspect-ratio: 1/1;
-  border: 1px solid rgba($color: #FDFDFD, $alpha: .4);
-  border-radius: 40px;
-  overflow: hidden;
+  // Fluid size: 6 vw with a min of 40 px and a max of 80 px
+  --size: clamp(40px, 6vw, 80px);
 
+  height: var(--size);
+  width: var(--size);            // simpler than aspect-ratio for IE11
+  border: 1px solid rgba($color: #fdfdfd, $alpha: 0.4);
+  border-radius: 50%;            // keeps perfect circle at any size
+  overflow: hidden;
   position: relative;
   transition: background 0.4s linear;
 
   .icons_container {
+    height: 100%;
+    width: 100%;
+    position: relative;
     transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
 
     span {
       position: absolute;
-      width: 100%;
-      height: 100%;
+      inset: 0;                 // top/right/bottom/left = 0
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 55%;             // icon scales with button
+        height: 55%;
+      }
     }
   }
 
   &:hover {
     background: var(--myGreen);
-    border: unset;
+    border: none;
 
     svg path {
       stroke: var(--myBlack);
     }
-
   }
 
-  &[data-left="false"]:hover {
-    .icons_container {
-      transform: translate(149%);
-    }
+  // 2. Offsets expressed in percentages → stay correct at any size
+  &[data-left="false"]:hover .icons_container {
+    transform: translateX(100%);
   }
-
   &[data-left="false"] .icons_container span {
-    left: -125%;
+    transform: translateX(-100%);
   }
 
+  &[data-left="true"]:hover .icons_container {
+    transform: translateX(-100%);
+  }
   &[data-left="true"] .icons_container span {
-    left: 125%;
+    transform: translateX(100%);
   }
+}
 
-  &[data-left="true"]:hover {
-    .icons_container {
-      transform: translate(-100%);
-    }
+// 3. (Optional) Very small viewports → keep a fixed tiny size
+@media (max-width: 360px) {
+  .wrapper {
+    --size: 36px;
   }
 }

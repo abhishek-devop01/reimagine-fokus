@@ -1,3 +1,5 @@
+
+
 .wrapper {
   background-color: var(--myBlack);
   color: var(--myWhite);
@@ -8,7 +10,6 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-
 
   .section_desc {
     display: flex;
@@ -81,5 +82,141 @@
     display: flex;
     column-gap: 10px;
   }
-  
+
+  /* Tablet Responsive - 768px to 1024px */
+  @media screen and (max-width: 1024px) {
+    padding: 20px 25px;
+
+    .section_desc {
+      left: 25px;
+      right: 25px;
+      font-size: calc(var(--smallText) * 0.9);
+    }
+
+    .filler_texts {
+      width: 40%;
+    }
+
+    .floral_container {
+      width: 60%;
+    }
+
+    .floral_desc_nd_nav {
+      width: 40%;
+      margin-top: 80px;
+
+      h2 {
+        font-size: calc(var(--title) * 0.9);
+      }
+
+      p {
+        width: 90%;
+        font-size: calc(var(--bodyCopy) * 0.95);
+      }
+    }
+
+    .floral_nav {
+      bottom: 25%;
+    }
+  }
+
+  /* Mobile Responsive - Below 768px */
+  @media screen and (max-width: 768px) {
+    padding: 15px 20px;
+    height: auto;
+    min-height: 100vh;
+
+    .section_desc {
+      position: static;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 30px;
+      font-size: calc(var(--smallText) * 0.85);
+    }
+
+    .filler_texts {
+      width: 100%;
+      justify-content: space-around;
+      order: 2;
+    }
+
+    .section_year {
+      order: 1;
+      margin-bottom: 15px;
+    }
+
+    .floral_nd_desc_container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .floral_container {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .floral_desc_nd_nav {
+      width: 100%;
+      margin-top: 0;
+      text-align: center;
+
+      h2 {
+        font-size: calc(var(--title) * 0.8);
+        margin-bottom: 15px;
+      }
+
+      .client_title {
+        font-size: calc(var(--smallText) * 0.9);
+      }
+
+      p {
+        width: 100%;
+        margin-top: 20px;
+        font-size: calc(var(--bodyCopy) * 0.9);
+        text-align: left;
+      }
+    }
+
+    .floral_nav {
+      position: static;
+      justify-content: center;
+      margin-top: 30px;
+      column-gap: 15px;
+    }
+  }
+
+  /* Small Mobile - Below 480px */
+  @media screen and (max-width: 480px) {
+    padding: 25px;
+
+    .section_desc {
+      font-size: calc(var(--smallText) * 0.8);
+    }
+
+    .filler_texts {
+      flex-direction: column;
+      gap: 8px;
+      text-align: center;
+    }
+
+    .floral_desc_nd_nav {
+      h2 {
+        font-size: calc(var(--title) * 0.7);
+      }
+
+      .client_title {
+        font-size: calc(var(--smallText) * 0.8);
+      }
+
+      p {
+        font-size: calc(var(--bodyCopy) * 0.85);
+        margin-top: 15px;
+      }
+    }
+
+    .floral_nav {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
 }
