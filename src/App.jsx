@@ -7,9 +7,11 @@ import Table from "./components/table/Table";
 import Footer from "./components/footer/Footer";
 import Marquees from "./components/marquee/Marquees";
 import Products from "./components/product/Products";
-import { Routes, Route } from "react-router-dom"; // ✅ no 'Router' here
+
+import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import TestComponent from "./components/test/Test";
 
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll(); // optional: move to useEffect if needed
@@ -27,6 +29,8 @@ const App = () => {
       {/* These will show on all pages which may not be what you want */}
       <ScrollMarquee />
       <Text />
+      <TestComponent />
+
       <Products />
       <Marquees />
       <SplitImage />

@@ -2,7 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
+
 import "./text.css"
+import TestComponent from '../test/Test';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -102,7 +104,8 @@ Built for creators, dreamers, and doers — welcome to your daily dose of clarit
           </div>
         </div>
       </section>
-      <section className='section3'></section>
+      <section className='section3'>
+      </section>
     </div>
   );
 };
