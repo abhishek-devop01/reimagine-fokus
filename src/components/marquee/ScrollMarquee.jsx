@@ -14,12 +14,12 @@ const ScrollMarquee = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed=".01"
-      className="w-full z-[9] h-72 py-15 rounded-tl-3xl text-white rounded-tr-3xl bg-[#000] overflow-hidden"
+      className="w-full z-[9] h-[44vh] py-15 rounded-tl-3xl text-white rounded-tr-3xl bg-[#000] overflow-hidden"
     >
       <div className="h-full  border-zinc-400 overflow-hidden flex whitespace-nowrap items-center">
         <motion.h3
           style={{ x: xMovement }}
-          className="text-[13vw] tracking-tighter leading-none font-black uppercase pr-18 flex-shrink-0 h-full flex items-center justify-center"
+          className="text-[10vw] tracking-tighter leading-none font-black uppercase pr-18 flex-shrink-0 h-full flex items-center justify-center"
         >
           {fullMarqueeContent}
         </motion.h3>

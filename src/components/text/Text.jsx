@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 import "./text.css";
 import TextPressure from "../ReactBits/TextPressure";
+import DecryptedText from "../ReactBits/ DecryptedText";
+import Magnet from "../ReactBits/Magnet";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -96,10 +98,20 @@ const Text = () => {
           />
         </div>
       </section>
-     
+
       <section className="d-flex-c section1 ">
-        <h1 className="heading">We’re more than just a brand</h1>
-        <p>#getFokus</p>
+        <h1 className="heading ">
+          <DecryptedText
+            text="We’re more than just a brand"
+            speed={60}
+            maxIterations={10}
+            characters="ABCD1234!?"
+            className="revealed"
+            parentClassName="all-letters"
+            encryptedClassName="encrypted"
+          />
+        </h1>
+        <p>#FuelYourFocus</p>
       </section>
       <section className="d-flex section2 ">
         <div className="innerText d-flex-c">
@@ -109,7 +121,9 @@ const Text = () => {
             clarity, community, and creative energy.
           </h2>
           <a href="#">
-            <button id="button">More About Us</button>
+            <Magnet padding={100} disabled={false} magnetStrength={2}>
+              <button id="button">About us</button>
+            </Magnet>
           </a>
         </div>
         <div className="img-div d-flex">
@@ -123,7 +137,6 @@ const Text = () => {
           </div>
         </div>
       </section>
-      
     </div>
   );
 };

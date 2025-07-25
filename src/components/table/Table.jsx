@@ -2,7 +2,6 @@ import { useState } from "react";
 import { projectList } from "../utils/ingredients";
 import PreviewModal from "../gallery/PreviewModal";
 import ProjectListItem from "../gallery/ProjectListItem";
-import FallingText from "../ReactBits/FallingText";
 
 function Indi() {
   return (
@@ -61,21 +60,7 @@ const Projects = () => {
         modal={modal}
       />
 
-      <div className="h-54 ">
-        <div className="h-full pt-20 ">
-          <FallingText
-            text={`Made with coconut water, No added sugar, Fight off Fatigue, Increase Energy`}
-            highlightWords={["coconut", "added", "Fatigue", "Fight", "Energy"]}
-            highlightClass="highlighted"
-            trigger="hover"
-            backgroundColor="transparent"
-            wireframes={false}
-            gravity={1.13}
-            fontSize="1.4rem"
-            mouseConstraintStiffness={0.9}
-          />
-        </div>
-      </div>
+      
     </section>
   );
 };

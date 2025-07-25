@@ -1,0 +1,187 @@
+.wrapper {
+  background-color: var(--myBlack);
+  color: var(--myWhite);
+  height: 100vh;
+  width: 100%;
+  padding: 22px 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  /* Mobile Responsive - Below 768px */
+  /* Small Mobile - Below 480px */
+}
+.wrapper .section_desc {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--smallText);
+  letter-spacing: 0.02ch;
+  position: absolute;
+  left: 35px;
+  top: 22px;
+  right: 35px;
+}
+.wrapper .filler_texts {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .section_year {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.wrapper .dev_cred {
+  opacity: 0.4;
+}
+.wrapper .dev_cred span {
+  display: block;
+}
+.wrapper .floral_nd_desc_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.wrapper .floral_container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.wrapper .floral_desc_nd_nav {
+  margin-top: 100px;
+  width: 30%;
+}
+.wrapper .floral_desc_nd_nav h2 {
+  font-weight: 300;
+  font-size: var(--title);
+  margin-bottom: 10px;
+}
+.wrapper .floral_desc_nd_nav .client_title {
+  opacity: 0.4;
+  font-size: var(--smallText);
+}
+.wrapper .floral_desc_nd_nav p {
+  margin-top: 25px;
+  font-size: var(--bodyCopy);
+  width: 80%;
+}
+.wrapper .floral_nav {
+  position: absolute;
+  bottom: 6%;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 20px 25px;
+  }
+  .wrapper .section_desc {
+    left: 25px;
+    right: 25px;
+    font-size: calc(var(--smallText) * 0.9);
+  }
+  .wrapper .filler_texts {
+    width: 40%;
+  }
+  .wrapper .floral_container {
+    width: 60%;
+  }
+  .wrapper .floral_desc_nd_nav {
+    width: 40%;
+    margin-top: 80px;
+  }
+  .wrapper .floral_desc_nd_nav h2 {
+    font-size: calc(var(--title) * 0.9);
+  }
+  .wrapper .floral_desc_nd_nav p {
+    width: 90%;
+    font-size: calc(var(--bodyCopy) * 0.95);
+  }
+  .wrapper .floral_nav {
+    bottom: 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 15px 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+  .wrapper .section_desc {
+    position: static;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-size: calc(var(--smallText) * 0.85);
+  }
+  .wrapper .filler_texts {
+    width: 100%;
+    justify-content: space-around;
+    order: 2;
+  }
+  .wrapper .section_year {
+    order: 1;
+    margin-bottom: 15px;
+  }
+  .wrapper .floral_nd_desc_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper .floral_container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .wrapper .floral_desc_nd_nav {
+    width: 100%;
+    margin-top: 0;
+    text-align: center;
+  }
+  .wrapper .floral_desc_nd_nav h2 {
+    font-size: calc(var(--title) * 0.8);
+    margin-bottom: 15px;
+  }
+  .wrapper .floral_desc_nd_nav .client_title {
+    font-size: calc(var(--smallText) * 0.9);
+  }
+  .wrapper .floral_desc_nd_nav p {
+    width: 100%;
+    margin-top: 20px;
+    font-size: calc(var(--bodyCopy) * 0.9);
+    text-align: left;
+  }
+  .wrapper .floral_nav {
+    position: static;
+    justify-content: center;
+    margin-top: 30px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 25px;
+  }
+  .wrapper .section_desc {
+    font-size: calc(var(--smallText) * 0.8);
+  }
+  .wrapper .filler_texts {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  .wrapper .floral_desc_nd_nav h2 {
+    font-size: calc(var(--title) * 0.7);
+  }
+  .wrapper .floral_desc_nd_nav .client_title {
+    font-size: calc(var(--smallText) * 0.8);
+  }
+  .wrapper .floral_desc_nd_nav p {
+    font-size: calc(var(--bodyCopy) * 0.85);
+    margin-top: 15px;
+  }
+  .wrapper .floral_nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}/*# sourceMappingURL=styles.module.css.map */
