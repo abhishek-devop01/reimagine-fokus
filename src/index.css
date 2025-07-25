@@ -45,7 +45,10 @@ body {
   font-family: "gilroy", apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background-color: #000000;
 }
-
+@font-face {
+    font-family: gilroy;
+    src: url(./assets/fonts/gilroy.ttf);
+}
 #button {
   background: none;
   cursor: pointer;
