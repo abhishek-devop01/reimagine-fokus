@@ -4,7 +4,7 @@ const projectList = [
     services: "None",
     duration: "High",
     year: "Only focuses on electrolytes",
-    preview: "/img4.jpg",
+    preview: "/5.jpg",
     color: "#000",
   },
   {
@@ -12,7 +12,7 @@ const projectList = [
     services: "None",
     duration: "Yes",
     year: "electrolyte focus",
-    preview: "/img3.jpg",
+    preview: "/3.jpg",
     color: "#000",
   },
   {
@@ -20,7 +20,7 @@ const projectList = [
     services: "Vitamin D3 for bone health, and more",
     duration: "Quick energy boost",
     year: "nutritional benefits",
-    preview: "/img2.jpg",
+    preview: "/2.jpg",
     color: "#028E74",
   },
   {
@@ -28,7 +28,7 @@ const projectList = [
     services: "Provided by Coconut Water and Salt",
     duration: "sufficient electrolytes",
     year: "Yes (glucose, fructose)",
-    preview: "/img1.jpg",
+    preview: "/1.jpg",
     color: "#028E74",
   },
   

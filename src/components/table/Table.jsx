@@ -17,7 +17,7 @@ const Projects = () => {
   const [modal, setModal] = useState({ activeIndex: 0, displayModal: false });
 
   return (
-    <section className="w-full px-desktop absolute top-15 text-left z-10">
+    <section className="w-full px-desktop absolute top-15 text-left z-10 flex-nowrap">
       {/* LABELS */}
       <div className="flex items-center justify-between mb-[10px] opacity-40">
         <span className="w-[20%]"></span>
@@ -30,7 +30,7 @@ const Projects = () => {
 
       {/* PROJECTS */}
       <div
-        className="text-left flex-wrap "
+        className="text-left flex-nowrap "
         onMouseEnter={() =>
           setModal((prev) => {
             return { ...prev, displayModal: true };

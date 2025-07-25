@@ -27,7 +27,7 @@ const SplitImage = () => {
           start: "55% 55%",
           end: "500% 50%",
           pin: true,
-          scrub: 1,
+          scrub: 2,
           // markers: true,
         },
       });
@@ -81,13 +81,17 @@ const SplitImage = () => {
           <div className="our-work-txt-div">
             <div className="scroll-work">
               <div className="scroll-img w-full">
-                <img src="/img1.jpg" alt="work 1" />
-                <img src="/img2.jpg" alt="work 2" />
-                <img src="/img3.jpg" alt="work 10" />
-                <img src="/img4.jpg" alt="work 11" />
-                <img src="/img5.jpg" alt="work 12" />
-                <img src="/img6.jpg" alt="work 13" />
-                <img src="/img7.jpg" alt="work 14" />
+                <img src="/1.jpg" alt="work 1" />
+                <img src="/2.jpg" alt="work 2" />
+                <img src="/3.jpg" alt="work 10" />
+                <img src="/5.jpg" alt="work 12" />
+                <img src="/2.jpg" alt="work 2" />
+                <img src="/3.jpg" alt="work 10" />
+                <img src="/5.jpg" alt="work 12" />
+                 <img src="/1.jpg" alt="work 1" />
+                <img src="/2.jpg" alt="work 2" />
+                <img src="/N01.jpg" alt="work 13" />
+                <img src="/NA01.jpg" alt="work 14" />
               </div>
             </div>
           </div>
@@ -103,7 +107,7 @@ const SplitImage = () => {
             backgroundColor="transparent"
             wireframes={false}
             gravity={1.13}
-            fontSize="1.4rem"
+            fontSize="2.3rem"
             mouseConstraintStiffness={0.9}
           />
         </div>

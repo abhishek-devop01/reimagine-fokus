@@ -328,40 +328,40 @@ const Loader = () => {
       </div>
       <div className="images-container" ref={imagesContainerRef}>
         <div className="img">
-          <img src="/img1.jpg" alt="" />
+          <img src="/3.jpg" alt="" />
         </div>
         <div className="img">
-          <img src="/img2.jpg" alt="" />
+          <img src="/5.jpg" alt="" />
         </div>
         <div className="img">
-          <img src="/img3.jpg" alt="" />
+          <img src="/N01.jpg" alt="" />
         </div>
         <div className="img">
-          <img src="/img4.jpg" alt="" />
+          <img src="/NA01.jpg" alt="" />
         </div>
         <div className="img">
-          <img src="/img5.jpg" alt="" />
+          <img src="/7.jpg" alt="" />
         </div>
         <div className="img">
-          <img src="/img6.jpg" alt="" />
+          <img src="/6.jpg" alt="" />
         </div>
         <div className="img">
-          <img src="/img7.jpg" alt="" />
+          <img src="/3.jpg" alt="" />
         </div>
         <div className="img">
-          <img src="/img8.jpg" alt="" />
+          <img src="/4.jpg" alt="" />
         </div>
         <div className="img">
-          <img src="/img9.jpg" alt="" />
+          <img src="/5.jpg" alt="" />
         </div>
         <div className="img">
-          <img src="/img10.jpg" alt="" />
+          <img src="/1.jpg" alt="" />
         </div>
         <div className="img">
-          <img src="/img11.jpg" alt="" />
+          <img src="/2.jpg" alt="" />
         </div>
         <div className="img">
-          <img src="/img12.jpg" alt="" />
+          <img src="/fokus.png" alt="" />
         </div>
       </div>
       <nav>

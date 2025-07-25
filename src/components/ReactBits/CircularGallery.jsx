@@ -325,13 +325,13 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://fokus.shop/cdn/shop/files/Frame_1.png?v=1736231978`, text: "stawberry & Mellon" },
+      { image: `https://fokus.shop/cdn/shop/files/fks.jpg?v=1738311491&width=1920`, text: "All in One" },
       { image: `https://fokus.shop/cdn/shop/files/Frame_3_1.png?v=1736231978`, text: "Mango & pineapple" },
       { image: `https://fokus.shop/cdn/shop/files/Frame_2_2.png?v=1737091469`, text: "Lemon & Kiwi" },
       { image: `https://fokus.shop/cdn/shop/files/Frame_1.png?v=1736231978`, text: "stawberry & Mellon" },
-      { image: `https://fokus.shop/cdn/shop/files/Frame_3_1.png?v=1736231978`, text: "Mango & pineapple" },
+      { image: `https://fokus.shop/cdn/shop/files/fks.jpg?v=1738311491&width=1920`, text: "Pack 0f 3" },
       { image: `https://fokus.shop/cdn/shop/files/Frame_2_2.png?v=1737091469`, text: "Lemon & Kiwi" },
-      { image: `https://fokus.shop/cdn/shop/files/Frame_1.png?v=1736231978`, text: "stawberry & Mellon" },
+      { image: `https://fokus.shop/cdn/shop/files/Frame_1.png?v=1736231978`, text: "stawberry" },
       { image: `https://fokus.shop/cdn/shop/files/Frame_3_1.png?v=1736231978`, text: "Mango & pineapple" },
       { image: `https://fokus.shop/cdn/shop/files/Frame_2_2.png?v=1737091469`, text: "Lemon & Kiwi" },
     ];

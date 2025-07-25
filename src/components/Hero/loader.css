@@ -88,8 +88,8 @@
 }
 .images-container .img {
   position: absolute;
-  top: 16rem;
-  left: 35rem;
+  top: 10;
+  left: 10;
   width: 20%;
   aspect-ratio: 5/3;
   border-radius: 0.75rem;
