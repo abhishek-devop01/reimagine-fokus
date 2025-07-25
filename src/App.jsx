@@ -18,6 +18,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen w-full">
+      
       <Routes>
         {/* Initial route */}
         <Route path="/" element={<Loader />} />
@@ -28,10 +29,11 @@ const App = () => {
 
       {/* These will show on all pages which may not be what you want */}
       <ScrollMarquee />
+      <Products />
+
       <Text />
       <TestComponent />
 
-      <Products />
       <Marquees />
       <SplitImage />
       <Table />

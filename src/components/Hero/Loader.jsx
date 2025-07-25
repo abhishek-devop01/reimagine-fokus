@@ -3,6 +3,7 @@ import { SplitText } from "gsap/SplitText";
 import { Flip } from "gsap/Flip";
 import { useEffect, useRef } from "react";
 import "./loader.css"
+import Particles, { LiquidChrome } from "../ReactBits/LiquidChrome";
 gsap.registerPlugin(Flip, SplitText);
 
 const Loader = () => {
@@ -302,12 +303,20 @@ const Loader = () => {
   }, []);
   return (
     <section
-      // data-scroll
-      // data-scroll-section
-      // data-scroll-speed="-.004"
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-0.4"
       className="hero"
       ref={heroRef}
     >
+    
+  <LiquidChrome
+    baseColor={[0.3, 0.1, 0.1]}
+    speed={0.3}
+    amplitude={0.34}
+    interactive={true}
+  />
+
       {" "}
       <div className="hero-bg" ref={heroBgRef}></div>
       <div className="counter">
@@ -375,7 +384,7 @@ const Loader = () => {
           </div>
           <div className="cta">
             <a className="a" href="#">
-              <span>Contact Us</span>
+              <span>LogIn</span>   
             </a>
           </div>
         </div>

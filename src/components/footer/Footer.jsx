@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <footer 
     
-    className="w-full mt-20 text-white">
-      <div className="max-w-screen-xl mx-auto px-4 py-10 md:py-16">
+    className="w-full mt-30 text-white h-54 ">
+      <div className="max-w-screen-xl mx-auto px-4 py-20 md:py-16">
         {/* Mobile: stack, Desktop: 2-col grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
 
@@ -46,7 +46,7 @@ const Footer = () => {
               <p className="text-zinc-400">
                 Lorem ipsum dolor sit amet 
               </p>
-              <button className="bg-blue-700 px-4 py-2 rounded-md text-white w-fit">
+              <button className="bg-blue-700 px-4  rounded-md text-white w-38 mt-10">
                 Enterprise Partner
               </button>
             </div>

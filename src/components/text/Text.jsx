@@ -1,11 +1,10 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Lenis from 'lenis';
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import "./text.css"
-import TestComponent from '../test/Test';
-
+import Lenis from "lenis";
+import "./text.css";
+import TextPressure from "../ReactBits/TextPressure";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,9 +14,7 @@ const Text = () => {
   useEffect(() => {
     const lenis = new Lenis();
 
-    lenis.on('scroll', (e) => {
-      
-    });
+    lenis.on("scroll", (e) => {});
 
     const raf = (time) => {
       lenis.raf(time);
@@ -26,7 +23,7 @@ const Text = () => {
 
     requestAnimationFrame(raf);
 
-    lenis.on('scroll', ScrollTrigger.update);
+    lenis.on("scroll", ScrollTrigger.update);
     gsap.ticker.add((time) => {
       lenis.raf(time * 1000);
     });
@@ -36,37 +33,37 @@ const Text = () => {
     mm.add("(min-width: 800px)", () => {
       let tl = gsap.timeline({
         scrollTrigger: {
-          trigger: '.section2',
-          start: '0% 50%',
-          end: '100% 50%',
+          trigger: ".section2",
+          start: "0% 50%",
+          end: "100% 50%",
           scrub: 1,
-        }
+        },
       });
 
-      tl.to(".one-img", { x: -500, rotate: -30 }, 'a');
-      tl.to(".three-img", { x: 500, rotate: 30 }, 'a');
-      tl.to(".two-img", { x: -500, rotate: -30, delay: -0.5 }, 'b');
-      tl.to(".four-img", { x: 500, delay: -0.5, rotate: 30 }, 'b');
-      tl.to(".innerText h2", { y: -100, opacity: 1, delay: -0.4 }, 'b');
-      tl.to(".innerText a", { y: -100, opacity: 1, delay: -0.4 }, 'b');
+      tl.to(".one-img", { x: -500, rotate: -30 }, "a");
+      tl.to(".three-img", { x: 500, rotate: 30 }, "a");
+      tl.to(".two-img", { x: -500, rotate: -30, delay: -0.5 }, "b");
+      tl.to(".four-img", { x: 500, delay: -0.5, rotate: 30 }, "b");
+      tl.to(".innerText h2", { y: -100, opacity: 1, delay: -0.4 }, "b");
+      tl.to(".innerText a", { y: -100, opacity: 1, delay: -0.4 }, "b");
     });
 
     mm.add("(max-width: 799px)", () => {
       let tl = gsap.timeline({
         scrollTrigger: {
-          trigger: '.section2',
-          start: '0% 50%',
-          end: '100% 80%',
+          trigger: ".section2",
+          start: "0% 50%",
+          end: "100% 80%",
           scrub: 1,
-        }
+        },
       });
 
-      tl.to(".one-img", { x: -200, rotate: -30 }, 'a');
-      tl.to(".three-img", { x: 200, rotate: 30 }, 'a');
-      tl.to(".two-img", { x: -200, rotate: -30, delay: -0.5 }, 'b');
-      tl.to(".four-img", { x: 200, delay: -0.5, rotate: 30 }, 'b');
-      tl.to(".innerText h2", { y: -100, opacity: 1, delay: -0.4 }, 'b');
-      tl.to(".innerText a", { y: -100, opacity: 1, delay: -0.4 }, 'b');
+      tl.to(".one-img", { x: -200, rotate: -30 }, "a");
+      tl.to(".three-img", { x: 200, rotate: 30 }, "a");
+      tl.to(".two-img", { x: -200, rotate: -30, delay: -0.5 }, "b");
+      tl.to(".four-img", { x: 200, delay: -0.5, rotate: 30 }, "b");
+      tl.to(".innerText h2", { y: -100, opacity: 1, delay: -0.4 }, "b");
+      tl.to(".innerText a", { y: -100, opacity: 1, delay: -0.4 }, "b");
     });
 
     return () => {
@@ -77,21 +74,43 @@ const Text = () => {
 
   return (
     <div
-    data-scroll
-      data-scroll-section
-      data-scroll-speed="-.1"
-    id="main" ref={mainRef}>
+      // data-scroll
+      //   data-scroll-section
+      //   data-scroll-speed="-0.1"
+      id="main"
+      ref={mainRef}
+    >
+      <section className="section3">
+        <div style={{ position: "relative", height: "600px" }}>
+          <TextPressure
+            text="Fokus"
+            flex={true}
+            alpha={true}
+            stroke={false}
+            width={true}
+            weight={true}
+            italic={true}
+            textColor="#ffffff"
+            strokeColor="#ff0000"
+            minFontSize={36}
+          />
+        </div>
+      </section>
+     
       <section className="d-flex-c section1 ">
-        <h1 className='heading'>We’re more than just a brand</h1>
+        <h1 className="heading">We’re more than just a brand</h1>
         <p>#getFokus</p>
       </section>
       <section className="d-flex section2 ">
         <div className="innerText d-flex-c">
           <h2>
-            Fokus is not just what you drink — it’s what drives you.
-Built for creators, dreamers, and doers — welcome to your daily dose of clarity, community, and creative energy.
+            Fokus is not just what you drink — it’s what drives you. Built for
+            creators, dreamers, and doers — welcome to your daily dose of
+            clarity, community, and creative energy.
           </h2>
-          <a href="#"><button id='button'>More About Us</button></a>
+          <a href="#">
+            <button id="button">More About Us</button>
+          </a>
         </div>
         <div className="img-div d-flex">
           <div className="lft d-flex-c">
@@ -104,8 +123,7 @@ Built for creators, dreamers, and doers — welcome to your daily dose of clarit
           </div>
         </div>
       </section>
-      <section className='section3'>
-      </section>
+      
     </div>
   );
 };

@@ -23,8 +23,8 @@ const TestComponent = () => {
       let t17 = gsap.timeline({
         scrollTrigger: { 
           trigger: part7Element, 
-          start: "50% 50%",
-          end: "300% 50%",
+          start: "55% 55%",
+          end: "500% 50%",
           pin: true,
           scrub: 1,
           // markers: true,
@@ -62,7 +62,7 @@ const TestComponent = () => {
     t17.to(
       ".scroll-img",
       {
-        marginTop: "-300%",
+        marginTop: "-600%",
       }
     );
   },
@@ -79,7 +79,7 @@ const TestComponent = () => {
           </div>
           <div className="our-work-txt-div">
             <div className="scroll-work">
-              <div className="scroll-img">
+              <div className="scroll-img w-full">
                 <img src="/img1.jpg" alt="work 1" />
                 <img src="/img2.jpg" alt="work 2" />
                 <img src="/img3.jpg" alt="work 10" />
