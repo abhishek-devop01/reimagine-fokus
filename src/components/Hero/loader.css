@@ -11,7 +11,8 @@
   object-fit: cover;
 }
 #fokusname{
-   width: 6vw;
+  width: 6vw;
+  height:6vh;
   object-fit: cover;
   overflow: hidden;
 }
@@ -88,7 +89,7 @@
 }
 .images-container .img {
   position: absolute;
-  top: 10;
+  top: 25;
   left: 10;
   width: 20%;
   aspect-ratio: 5/3;

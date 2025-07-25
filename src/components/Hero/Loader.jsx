@@ -270,6 +270,7 @@ const Loader = () => {
           heroRef.current.querySelectorAll(".nav-items .links a span"),
           heroRef.current.querySelector(".nav-items .links p span"),
           heroRef.current.querySelector(".nav-items .cta a span"),
+          heroRef.current.querySelector("img"),
         ],
         {
           y: "0%",
@@ -285,7 +286,8 @@ const Loader = () => {
           heroRef.current.querySelector(".header h1 span"),
           heroRef.current.querySelector(".site-info h2 span"),
           heroRef.current.querySelectorAll(".site-info-copy p span"),
-          heroRef.current.querySelector(".hero-footer h2 span"),
+          heroRef.current.querySelector(".hero-footer h2 span "),
+          heroRef.current.querySelector(".name"),
         ],
         {
           y: "0%",
@@ -355,11 +357,11 @@ const Loader = () => {
           <img src="/fokus.png" alt="" />
         </div>
       </div>
-      <nav>
+      <nav >
         <div className="logo-name">
           <a className="a" href="#">
-            <span>
-              <img
+            <span >
+              <img 
                 id="fokusname"
                 className="img"
                 ref={sidebarLogoRef}
@@ -398,7 +400,7 @@ const Loader = () => {
       </div>
       <div className="header">
         <h1 className="h1">
-          <span className="name ">Fokus</span>
+          <span className="name" ref={siteInfoDividerRef}>Fokus</span>
         </h1>
       </div>
       <div className="site-info">
