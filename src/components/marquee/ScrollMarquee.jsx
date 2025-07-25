@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const ScrollMarquee = () => {
-  const textContent = "We Are Fokus We Are Fokus ";
+  const textContent = "We Are Fokus We Are Fokus We Are Fokus We Are Fokus ";
   const fullMarqueeContent = textContent + textContent; 
 
   const { scrollYProgress } = useScroll();
@@ -13,8 +13,8 @@ const ScrollMarquee = () => {
     <div
       data-scroll
       data-scroll-section
-      data-scroll-speed=".01"
-      className="w-full z-[9] h-[44vh] py-15 rounded-tl-3xl text-white rounded-tr-3xl bg-[#000] overflow-hidden"
+      data-scroll-speed=".04"
+      className="w-full z-[9] h-54 py-15 rounded-tl-3xl text-white rounded-tr-3xl bg-[#000] overflow-hidden"
     >
       <div className="h-full  border-zinc-400 overflow-hidden flex whitespace-nowrap items-center">
         <motion.h3

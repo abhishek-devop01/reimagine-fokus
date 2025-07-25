@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { Flip } from "gsap/Flip";
 import { useEffect, useRef } from "react";
-import "./loader.css"
+import "./loader.css";
 import Particles, { LiquidChrome } from "../ReactBits/LiquidChrome";
 gsap.registerPlugin(Flip, SplitText);
 
@@ -302,24 +302,15 @@ const Loader = () => {
     };
   }, []);
   return (
-    <section
-      data-scroll
-      data-scroll-section
-      data-scroll-speed="-0.4"
-      className="hero"
-      ref={heroRef}
-    >
-    
-  
-
+    <section className="hero" ref={heroRef}>
       {" "}
       <div className="hero-bg" ref={heroBgRef}>
         <LiquidChrome
-    baseColor={[0.3, 0.1, 0.1]}
-    speed={0.3}
-    amplitude={0.34}
-    interactive={true}
-  />
+          baseColor={[0.3, 0.1, 0.1]}
+          speed={0.2}
+          amplitude={0.34}
+          interactive={true}
+        />
       </div>
       <div className="counter">
         <div className="counter-1 digit" ref={counter1Ref}></div>
@@ -368,7 +359,13 @@ const Loader = () => {
         <div className="logo-name">
           <a className="a" href="#">
             <span>
-              <img id="fokusname" className="img" ref={sidebarLogoRef} src={"./lo.png"} alt="" />
+              <img
+                id="fokusname"
+                className="img"
+                ref={sidebarLogoRef}
+                src={"./lo.png"}
+                alt=""
+              />
             </span>
           </a>
         </div>
@@ -386,7 +383,7 @@ const Loader = () => {
           </div>
           <div className="cta">
             <a className="a" href="#">
-              <span>LogIn</span>   
+              <span>LogIn</span>
             </a>
           </div>
         </div>
@@ -407,7 +404,6 @@ const Loader = () => {
       <div className="site-info">
         <h2 className="h2">
           <span>Stay Active </span>
-          
         </h2>
         <div className="divider" ref={siteInfoDividerRef}></div> {/* Add ref */}
         <div className="site-info-copy">
