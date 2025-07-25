@@ -41,12 +41,12 @@ const Products = () => {
           initial={{ y: pos }}
           animate={{ y: pos + `rem` }}
           transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
-          className="frame w-[24rem] h-[20rem] bg-white left-[45%] -translate-x-[50%]  absolute overflow-hidden"
+          className="frame w-[30vw] h-[50vh]  bg-white left-[45%] -translate-x-[50%]  absolute overflow-hidden"
         >
           <motion.div
             animate={{ y: -pos + `rem` }}
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
-            className="frame w-full h-full bg-sky-200 "
+            className="frame w-full h-[full] bg-sky-200 "
           >
             <video
               muted
@@ -85,7 +85,7 @@ const Products = () => {
           <motion.div
             animate={{ y: -pos + `rem` }}
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
-            className="frame w-full h-full bg-sky-500 "
+            className="frame w-full h-[20vh]  bg-sky-500 "
           >
             <video
               muted

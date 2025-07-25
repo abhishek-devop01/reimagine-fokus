@@ -310,15 +310,17 @@ const Loader = () => {
       ref={heroRef}
     >
     
-  <LiquidChrome
+  
+
+      {" "}
+      <div className="hero-bg" ref={heroBgRef}>
+        <LiquidChrome
     baseColor={[0.3, 0.1, 0.1]}
     speed={0.3}
     amplitude={0.34}
     interactive={true}
   />
-
-      {" "}
-      <div className="hero-bg" ref={heroBgRef}></div>
+      </div>
       <div className="counter">
         <div className="counter-1 digit" ref={counter1Ref}></div>
         <div className="counter-2 digit" ref={counter2Ref}></div>

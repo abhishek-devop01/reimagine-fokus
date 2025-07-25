@@ -21,12 +21,16 @@
   font-weight: 500;
   letter-spacing: -0.1rem;
   line-height: 1.1;
+  color:white;
+
 }
 .h2{
   font-size: 1.75rem;
   font-weight: 500;
   letter-spacing: -0.02rem;
   line-height: 1.1;
+  color:white;
+
 }
 
 .a,
@@ -36,6 +40,7 @@
   font-size: 1.2rem;
   font-weight: 550;
   overflow: hidden;
+  color:white;
   line-height: 1;
 }
 .hero {
@@ -51,7 +56,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
   transform-origin: bottom;
   transform: scaleY(0%);
 }
@@ -62,6 +66,8 @@
   display: flex;
   height: 120px;
   font-size: 120px;
+  color:white;
+
   line-height: 150px;
   clip-path: polygon(0, 100% 8, 100% 128px, 128px);
   overflow: hidden;
@@ -106,7 +112,7 @@
 }
 
 .divider {
-  background-color: rgb(110, 110, 110);
+  background-color: rgb(0, 0, 0);
 }
 nav {
   position: relative;
@@ -116,6 +122,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .logo-name .a {
@@ -184,6 +191,8 @@ nav {
 .name {
   margin-top: 25vh;
   font-weight: 600;
+  color:white;
+
 }
 .site-info {
   position: absolute;
@@ -210,6 +219,8 @@ nav {
   position: absolute;
   bottom: 1.5rem;
   left: 7.5rem;
+  color:white;
+
 }
 
 .line {
