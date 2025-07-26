@@ -74,7 +74,7 @@ function Influencer() {
 
         <div className={styles.filler_texts}>
           <div className={styles.section_year}>
-            <span>@2022-2025</span>
+            <span>@2025</span>
             <div className={styles.dev_cred}>
               <span>Clarity in every sip.</span>
               <span>“Sip. Create. Repeat.”</span>

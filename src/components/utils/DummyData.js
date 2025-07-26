@@ -2,7 +2,7 @@ const testimonials = [
   {
     name: 'Ashish Chanchlani',
     title: 'YouTuber And Co-founder of OG BEAUTY ',
-    review: 'Working with Meshach was an absolute delight. His attention to detail and creative problem-solving elevated our UI to the next level.',
+    review: '“Fokus—naam hi nahi, ek vibe hai! The branding, the taste, the whole energy of it is so addictive that it’s effortlessly becoming my daily companion.”',
     image: '/01.jpg'
   },
   {
